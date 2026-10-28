@@ -1,0 +1,122 @@
+\documentclass{jurnalft}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{array}  
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[round,authoryear]{natbib}
+\bibliographystyle{apalike}
+
+% Informasi Jurnal
+\edisiJurnal{Agustus 2025}
+\volJurnal{5}
+\nomorVolume{1}
+\jurnalDoi{10.124153/2232}
+\startingPage{12}
+
+\tanggalTerima{1 Juli 2025}
+\tanggalSetuju{2 Juli 2025}
+\tanggalTerbit{10 Juli 2025}
+
+\setJudulArtikel{Template Jurnal Penelitian Genetika Universitas Muhammadiyah Buton dengan \LaTeX}
+
+% Pisahkan kata kunci dengan tanda ; 
+\kataKunci{kata Kunci 1; kata Kunci 2; kata Kunci 2; kata Kunci 2}
+
+\tambahPenulis{Didin Adri}{1*}
+\tambahPenulis{Muhammad Awaluddin}{2}
+\tambahPenulis{Darmawan}{3}
+\tambahPenulis{Rando}{4}
+
+\tambahAfiliasi{1,4}{Program Studi Matematika, Universitas XYZ}
+\tambahAfiliasi{2}{Fakultas Ilmu Komputer, Universitas ABC}
+\tambahAfiliasi{3}{Departemen Teknik Komputer, Universitas DEF}
+
+\setKorespondensi{didin.adri@umbuton.ac.id}
+
+\usepackage{hyphenat} 
+\hyphenation{
+	pe-ne-li-tian 										
+	peng-gu-na-an
+	re-fe-ren-si
+	pe-nu-li-san
+}
+
+
+\begin{document}
+	
+	\cetakHeader
+	\cetakDaftarPenulis
+	
+	\begin{abstrak}
+		Template ini merupakan format penulisan untuk penulis artikel pada Jurnal Wawasan Sarjana yang sudah disesuaikan dengan gaya selingkung jurnal. Para penulis harus mengikuti petunjuk yang diberikan dalam panduan ini. Dokumen ini dapat digunakan sebagai referensi dalam menulis manuskrip Anda. pastikan untuk tidak mengubah style yang ada pada template ini, meliputi jenis dan ukuran font, besar spasi, jarak indent, dan lain sebagainya. Jumlah kata keseluruhan isi Naskah antara 3.000-6.000 Kata. Jika terdapat istilah-istilah asing yang belum dibakukan ditulis italic. Penulisan abstrak antara 150-200 kata berbahasa Inggris dan Indonesia dengan menggunakan Times New Roman 10pt, spasi . \textbf{Abstrak berisi: pendahuluan (1-2 kalimat), tujuan penelitian (1 kaliman), permasalahan (1 kalimat), metode (3-5 kalimat), pembahasan (3-5 kalimat), penutup (1-2 kalimat) yang dimuat dalam 1 (satu) paragraf}.
+	\end{abstrak}
+	
+	\begin{multicols}{2}
+	\section{Pendahuluan}	
+	Pendahuluan antara lain berisi latar belakang masalah, kesenjangan antara yang diidealkan dan yang senyatanya, didukung oleh teori dan penelitian mutakhir yang relevan tentang masalah, dan nilai baru penelitian yang merupakan inovasi. Bagian ini ditulis sebanyak maksimum 20\% dari badan artikel. Sumber literatur sangat dianjurkan dari sumber primer (artikel). contoh kutipan atau rujukan Pada implementasi jaringan kampus, protokol TCP digunakan untuk pengiriman file dan protokol UDP untuk layanan streaming.
+	
+	
+	\section{Metode Penelitian}
+	Bagian metode harus ditulis singkat, padat, jelas, tetapi mencukupi. Ia menjelaskan penggunaan metode penelitian, prosedur pelaksanaan, alat, bahan, atau instrumen harus dijelaskan dengan baik, namun bukan berupa teori. Jika dipandang perlu, ada lampiran mengenai kisi-kisi instrumen atau penggalan bahan yang digunakan. Jika ada rumus-rumus statistik yang digunakan sebagai bagian dari metode, rumus yang sudah umum digunakan tidak perlu ditulis. Misalnya, ada ketentuan spesifik yang ditetapkan oleh peneliti dalam rangka mengumpulkan dan menganalisis data dijelaskan pada bagian metode ini. Bagian ini ditulis sebanyak maksimum 10\% (untuk penelitian kualitatif) atau maksimum 15\% (untuk penelitian kuantitatif) dari badan artikel.
+	
+	\section{Hasil dan Pembahasan}
+	Untuk memudahkan pemahaman dan pembacaan,  hasil penelitian dideskripsikan terlebih dahulu, dilanjutkan bagian pembahasan. Subjudul hasil dan subjudul pembahasan disajikan terpisah. Bagian ini harus menjadi bagian yang paling banyak, minimum 60\% dari keseluruhan badan artikel.
+	
+	\subsection{Hasil}
+	Hasil dapat disajikan dalam bentuk tabel angka-angka, grafik, deskripsi verbal, atau gabungan antara ketiganya. Tabel, grafik, atau gambar tidak boleh terlalu panjang, terlalu besar, atau terlalu banyak. Penulis sebaiknya menggunakan variasi penyajian tabel, grafik, atau deskripsi verbal. Tabel dan grafik yang disajikan harus dirujuk dalam teks. Cara penulisan tabel ditunjukkan pada Tabel 1. Tabel tidak memuat garis vertikal (tegak) dan garis horisontal (datar) hanya ada di kepala dan ekor tabel. Ukuran huruf isian tabel dan gambar boleh diperkecil
+	\begin{table}[H]
+		\centering
+		\captionsetup{font=small, skip=3pt}
+		\caption{Bobot Panjang Bagian Badan Artikel}
+		\footnotesize  % Ukuran huruf isi tabel
+		\setlength{\tabcolsep}{4pt}  % Mengatur padding kolom (opsional)
+		\renewcommand{\arraystretch}{1.2}  % Jarak baris
+		
+		% Definisi kolom p{} dengan pembungkus teks rata kiri
+		\begin{tabular}{>{\raggedright\arraybackslash}p{0.6cm} 
+				>{\raggedright\arraybackslash}p{2.3cm} 
+				>{\centering\arraybackslash}p{1.6cm} 
+				>{\raggedright\arraybackslash}p{2.7cm}}
+			\toprule
+			No & Nama Bagian & Panjang dalam \% & Keterangan \\
+			\midrule
+			1 & Pendahuluan & 20 & Maksimum (termasuk judul dan abstrak) \\
+			\midrule
+			2 & Metode & 10 & Untuk penelitian kuantitatif dapat sampai 15\% \\
+			\midrule
+			3 & Hasil dan Pembahasan & 60 & Minimum \\
+			\midrule
+			4 & Kesimpulan dan Daftar Pustaka & 10 & Kurang lebih \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+
+	\subsection{Pembahasan}
+	Pembahasan dimaksudkan untuk memaknai hasil penelitian sesuai dengan teori yang digunakan dan tidak sekadar menjelaskan temuan. Pembahasan harus diperkaya dengan merujuk hasil-hasil penelitian sebelumnya yang telah terbit dalam jurnal ilmiah.
+	Penulisan rujukan dalam badan artikel menggunakan pola berkurung (). Jika hanya ada satu penulis: contoh (jika ada dua penulis:  contoh Jika dua sampai lima penulis, untuk penyebutan yang pertama ditulis semua: contoh (Retnowati, Fathoni, \& Chen, 2018) dan penyebutan berikutnya ditulis (Retnowati et al., 2018). Penulis lebih dari tiga orang hanya ditulis pengarang pertama diikuti et al., contoh (Janssen et al.’ 2010). Perujukan lebih disarankan bukan berupa kutipan langsung atau tidak memuat terlalu banyak kutipan langsung.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gambar2.png} % Ganti dengan nama file gambar
+		\captionsetup{font=small, skip=5pt}
+		\caption{Judul atau keterangan gambar yang informatif dan ringkas.}
+		\label{fig:labelgambar}  % Untuk referensi silang jika diperlukan
+	\end{figure}
+	
+	\section{Kesimpulan}
+	Simpulan tidak sekadar mengulangi data, tetapi berupa substansi pemaknaan. Ia dapat berupa pernyataan tentang apa yang diharapkan, sebagaimana dinyatakan dalam bab "pendahuluan" yang akhirnya dapat menghasilkan bab "hasil dan pembahasan" sehingga ada kompatibilitas. Selain itu, dapat juga ditambahkan prospek pengembangan hasil penelitian dan prospek aplikasi penelitian selanjutnya ke depan (berdasarkan hasil dan pembahasan).
+	
+	\section{Ucapan Terimakasih}
+	Bagian ini berisi ucapan terima kasih kepada sponsor, pendonor dana, narasumber, atau pihak-pihak yang berperan penting dalam pelaksanaan penelitian	
+	
+	
+	\textbf{Contoh Kutipan}: Pengembangan teori analisis real dan penerapannya dalam berbagai disiplin ilmu telah mendapat perhatian luas dalam literatur. Konsep dasar seperti kekonvergenan dan kekontinuan dibahas secara mendalam oleh \citep{rudin1976}, sedangkan pendekatan sistematis terhadap persiapan dokumen ilmiah diperkenalkan oleh \citep{lamport1994}. Model-model pembelajaran berbasis logika fuzzy dikembangkan oleh \citep{zadeh1965} dan diperluas dalam konteks pendidikan oleh \citep{sugeno1985}. Dalam bidang kecerdasan buatan, teknik inferensi fuzzy Mamdani telah digunakan secara luas sebagaimana dijelaskan oleh \citep{mamdani1975}, sementara \citep{ross2004} memberikan kerangka kerja lengkap untuk desain sistem fuzzy modern. Sebagai tambahan, \citep{zimmermann2001} menyajikan pendekatan optimasi fuzzy yang relevan dalam konteks pengambilan keputusan multikriteria.
+	
+	
+	\renewcommand{\refname}{Daftar Pustaka}
+	\bibliography{referensi}
+	\end{multicols}
+\end{document}
